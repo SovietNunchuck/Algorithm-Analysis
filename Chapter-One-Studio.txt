@@ -1,8 +1,8 @@
 1. Calculating reduced values
-1a) 1
-1b) n
-1c) n^2
-1d) log(2)n
+1a) O(1)
+1b) O(n)
+1c) O(n^2)
+1d) O(log(2)n)
 
 2. Calculating the big-O values of algorithms
 2a) O(n)  Variable n refers to value held by c.
