@@ -1,0 +1,22 @@
+1. Calculating reduced values
+1a) 1
+1b) n
+1c) n^2
+1d) log(2)n
+
+2. Calculating the big-O values of algorithms
+2a) O(n)  Variable n refers to value held by c.
+2b) O(n^2)  Variable n refers to values held by row_idx and col_idx.
+2c) O(n^2)  Variable n refers to values held by str and c.
+
+3. Determining run time in terms of big-O
+3a) O(n)  The run time will be directly proportional to the number of Customer objects in the array.
+3b) O(n)  The run time is going to depend on how many names are checked before a Customer with last name starting with "B" shows up.
+3c) O(n)  Although the list is pre-sorted, the logic from 3b still applies. The run time depends on the number of last names starting with "A" before you hit "B".
+3d) O(n)  Each Customer in the array will need to have its name checked to see if first name starts with "A". Again, run time is dependent on the length of the array.
+
+4. Determining run time in terms of big-O
+4a) O(n)  See 3a.
+4b) O(n)  Although all of the applicable Customers have been placed in a single array, a loop will still be required to go through the objects and grab their names to be printed.
+4c) O(1)  This is easy because all Customers with last names beginning with "A" are in a single array.
+4d) O(n^2)  Because you will need to search each letter-based array in the over-arching dictionary, this operation will require a nested loop.
