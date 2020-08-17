@@ -7,7 +7,7 @@
 2. Calculating the big-O values of algorithms
 2a) O(n)  Variable n refers to value held by c.
 2b) O(n^2)  Variable n refers to values held by row_idx and col_idx.
-2c) O(n^2)  Variable n refers to values held by str and c.
+2c) O(n)  Variable n refers to value held by str. The inner loop is not counted as an additional n because it can only executed up to 10 times (it is finite). So n is the number of strings in the array.
 
 3. Determining run time in terms of big-O
 3a) O(n)  The run time will be directly proportional to the number of Customer objects in the array.
@@ -19,4 +19,4 @@
 4a) O(n)  See 3a.
 4b) O(n)  Although all of the applicable Customers have been placed in a single array, a loop will still be required to go through the objects and grab their names to be printed.
 4c) O(1)  This is easy because all Customers with last names beginning with "A" are in a single array.
-4d) O(n^2)  Because you will need to search each letter-based array in the over-arching dictionary, this operation will require a nested loop.
+4d) O(n)  You can have a separate loop for each key-value pair, and when they're added together to get 26n, you simply reduce it to O(n).
